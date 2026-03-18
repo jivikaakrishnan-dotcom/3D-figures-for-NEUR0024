@@ -1,8 +1,8 @@
-# Short name of the dataset/study
+# Biased connectivity in ventral subiculum
 
 ## Short description 
 
-Biased connectivity of brain-wide inputs to ventral subiculum output neurons
+Biased connectivity of brain-wide inputs to ventral subiculum output neurons. Dataset of 3D positions for cells and where they project to. 
 
 ## Name of PI  
 
