@@ -68,11 +68,11 @@ plt.figure(figsize=(6, 6))
 
 plt.plot(odor_patch[:, 0], odor_patch[:, 1], "r-", label="Odor Patch Boundary")
 
-scale = 13
+strange_scale = 13  # Why is this scaling factor needed? microns to pixels?
 
 plt.scatter(
-    [i * scale for i in traj_data["coord_x"]],
-    [i * scale for i in traj_data["coord_y"]],
+    [i * strange_scale for i in traj_data["coord_x"]],
+    [i * strange_scale for i in traj_data["coord_y"]],
     s=1,
     c="blue",
     label="Worm centroid trajectory",

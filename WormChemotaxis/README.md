@@ -26,6 +26,10 @@ Read the README.md here to understand the datasets: https://github.com/Barrios-L
 
 **Videos** of some of the original recordings can be found here: https://rdr.ucl.ac.uk/articles/dataset/_b_Chemotaxis_Raw_Videos_b_/31390177/1
 
+<a href="https://rdr.ucl.ac.uk/articles/dataset/_b_Chemotaxis_Raw_Videos_b_/31390177/1?file=62091505">
+<img src="images/Video.png" width="400"/></a>
+
+
 ## Suggestions for easy tasks/low-hanging fruit   
 
 Load in dataset in Jupyter notebook, create plot of trajectory as in paper above (e.g. Figure 4A)
