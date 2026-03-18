@@ -25,6 +25,18 @@ jobs:
         python-version:  ${{ matrix.python-version }}
 
 
+    - name: Test WormChemotaxis
+      run: |
+        echo "Running WormChemotaxis tests..."
+        
+        cd WormChemotaxis
+        pip install -r requirements.txt
+
+        git clone -b Worm-Locomotion https://github.com/Barrios-Lab/Chemotaxis-Data-and-Analysis.git
+        
+        python ideas.py
+
+
     - name: Test FissionYeastPhenotyping
       run: |
         echo "Running FissionYeastPhenotyping tests..."

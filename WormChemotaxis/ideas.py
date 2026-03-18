@@ -1,13 +1,21 @@
 # Some ideas...
 
 import h5py
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
 # Open file
 filepath = (
-    "Mock_worms/chemotaxis_mock_25825_1_20250725_153953/metadata_featuresN_oneworm.hdf5"
+    "Chemotaxis-Data-and-Analysis/Mock_worms/chemotaxis_mock_25825_1_20250725_153953/metadata_featuresN_oneworm.hdf5"
 )
+filepath = "Chemotaxis-Data-and-Analysis/Aversive_worms/chemotaxis_avsv_24_1_23_03_20240124_142324/metadata_featuresN_oneworm.hdf5"
+
+# Check that file exists
+if not os.path.exists(filepath):
+    print(f"\nFile not found: {filepath}!\nPlease clone the repository into this folder using:\n")
+    print("    git clone -b Worm-Locomotion https://github.com/Barrios-Lab/Chemotaxis-Data-and-Analysis.git\n")
+    quit()
 
 with h5py.File(filepath, "r") as f:
     # List all datasets
@@ -26,7 +34,7 @@ with h5py.File(filepath, "r") as f:
         print(f"Odor patch defined by {len(odor_patch)} boundary points")
 
     # Load skeleton coordinates
-    # coords = f['coordinates'][:]  # Shape: (n_frames, n_segments, 2)
+    #coords = f['coordinates'][:]  # Shape: (n_frames, n_segments, 2)
 
 print(odor_patch)
 
