@@ -1,5 +1,0 @@
-# Add any specific Python packages required for the loading/analysing the dataset here. 
-matplotlib
-h5py
-pandas
-numpy
